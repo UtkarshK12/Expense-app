@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    screens: {
+      'phone': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'laptop': '768px',
+      // => @media (min-width: 768px) { ... }
+
+    }
   },
   plugins: [],
 }
