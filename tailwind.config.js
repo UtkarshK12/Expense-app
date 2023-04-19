@@ -6,11 +6,14 @@ export default {
   ],
   theme: {
     screens: {
-      'phone': '640px',
+      'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
-      'laptop': '768px',
+      'md': '768px',
       // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
 
     }
   },
