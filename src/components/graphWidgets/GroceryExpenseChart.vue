@@ -15,7 +15,7 @@ onMounted(async()=>{
     const graphData = {
     labels: labels,
     datasets: [{
-    label: 'My First Dataset',
+    label: 'Grocery Expense',
     data: [groceryStore.details['participants'],groceryStore.details['participants']+1,groceryStore.details['participants']+2,groceryStore.details['participants'],groceryStore.details['participants']+1,groceryStore.details['participants']+2],
     fill: false,
     borderColor: 'rgb(75, 192, 192)',

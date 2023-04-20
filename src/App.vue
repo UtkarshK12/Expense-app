@@ -10,15 +10,19 @@ import TotalExpenseChart from './components/graphWidgets/TotalExpenseChart.vue'
 
 
 <template>
+<div class="md:h-screen bg-gradient-to-b from-gray-600 to-gray-800 ">
+  <div class="  grid sm:grid-cols-1 md:grid-cols-3 ">
 
-<div class="grid sm:grid-cols-1 md:grid-cols-3 ">
-
-  <div class="p-4"><FoodExpenseChart></FoodExpenseChart></div>
-  <div class="p-4"><FixedExpenseChart></FixedExpenseChart></div>
-  <div class="p-4"><GroceryExpenseChart></GroceryExpenseChart></div>
-  <div class="p-4"><NeededExpenseChart></NeededExpenseChart></div>
-  <div class="p-4"><WantExpenseChart></WantExpenseChart></div>
-  <div class="p-4"><TotalExpenseChart></TotalExpenseChart></div>
+<div class="p-3"><FoodExpenseChart></FoodExpenseChart></div>
+<div class="p-3"><FixedExpenseChart></FixedExpenseChart></div>
+<div class="p-3"><GroceryExpenseChart></GroceryExpenseChart></div>
+<div class="p-3"><NeededExpenseChart></NeededExpenseChart></div>
+<div class="p-3"><WantExpenseChart></WantExpenseChart></div>
+<div class="p-3"><TotalExpenseChart></TotalExpenseChart></div>
 
 </div>
+
+
+</div>
+
 </template>
