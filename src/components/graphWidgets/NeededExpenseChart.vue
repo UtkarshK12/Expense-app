@@ -27,7 +27,14 @@ onMounted(async()=>{
     document.getElementById('needed-chart'),
     {
       type: 'line',
-      data: graphData
+      data: graphData,
+      options:{
+        plugins:{
+        legend:{
+          display:false
+        }}
+      }
+    
     }
   );
 }

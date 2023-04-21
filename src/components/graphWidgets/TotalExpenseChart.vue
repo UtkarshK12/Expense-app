@@ -27,7 +27,14 @@ onMounted(async()=>{
     document.getElementById('total-chart'),
     {
       type: 'line',
-      data: graphData
+      data: graphData,
+      options:{
+        plugins:{
+        legend:{
+          display:false
+        }}
+      }
+    
     }
   );
 }
