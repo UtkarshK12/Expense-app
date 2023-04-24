@@ -1,7 +1,6 @@
 <script setup>
 import { ref,onMounted } from 'vue'
 import {Chart} from 'chart.js/auto'
-import { targetedDetailStore } from '../piniaStore/targetedExpensesStore';
 
 
 </script>

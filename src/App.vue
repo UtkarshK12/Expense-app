@@ -9,18 +9,20 @@ import TotalExpenseChart from './components/graphWidgets/TotalExpenseChart.vue'
 import MaintenanceMoney from './components/topStatsWidgets/maintenanceMoney.vue';
 import PerDayAverage from './components/topStatsWidgets/PerDayAverage.vue';
 import Savings from './components/topStatsWidgets/Savings.vue';
-import TargetedExpense from './components/topStatsWidgets/targetedExpense.vue';
+import TargetedExpense from './components/topStatsWidgets/targetedExpense.vue'
 </script>
 
 
 <template>
-<div class="flex flex-col justify-center w-full mx-auto min-h-screen bg-gradient-to-b from-teal-800 to-teal-950 ">
+<div class="flex flex-col justify-center w-full mx-auto min-h-screen bg-gradient-to-b from-teal-700 to-teal-950 ">
 
 <div class="grid sm: grid-cols-1 w-full  md:grid-cols-4 w-full">
-  <div class="p-3"><MaintenanceMoney></MaintenanceMoney></div>
-  <div class="p-3"><PerDayAverage></PerDayAverage></div>
+
   <div class="p-3"><Savings></Savings></div>
   <div class="p-3"><TargetedExpense></TargetedExpense></div>
+  <div class="p-3"><Savings></Savings></div>
+  <div class="p-3"><Savings></Savings></div>
+  
 </div>
 
 
