@@ -7,7 +7,7 @@ import {Chart} from 'chart.js/auto'
 
 <template>
 
-<div class="bg-gray-100 p-8 rounded-lg shadow-lg"></div>
+<div class="flex-1 bg-gray-100 p-8 rounded-lg shadow-lg"></div>
 
 
 </template>

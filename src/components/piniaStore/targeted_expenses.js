@@ -1,21 +1,24 @@
 import axios from "axios";
 import { defineStore } from "pinia";
 
-export const targetedExpenseDetailStore = defineStore('targetedExpenseDetailStore', {
+export const targetedDetailStore = defineStore('targetedExpenses',{
+        state:()=>{
+            return {details:{}}
+        },
 
-    state: () => {
-       return { targetedExpense: {} }
-    },
-
-    actions: {
-        async fetchDetails() {
-            try {
-                const response = await axios.get("https://www.boredapi.com/api/activity");
-                this.targetedExpense = response.data;
-            } catch (error) {
-                console.log(error);
+        actions:{                                                               
+            async fetchDetails(){
+                try{
+                    const res=await axios.get('https://www.boredapi.com/api/activity')
+                    this.details=res.data
+                }
+                catch(error){
+                    console.error(error)
+                }
             }
-        }
-    }
 
-});
+        },
+
+       
+
+}) 

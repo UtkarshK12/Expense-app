@@ -7,7 +7,7 @@ import {Chart} from 'chart.js/auto'
 
 <template>
 
-<div class=" bg-gray-100 p-8 rounded-lg shadow-lg">
+<div class="flex-grow bg-gray-100 p-8 rounded-lg shadow-lg ">
   
       
       <h2 class="text-3xl font-bold mb-6 text-teal-800">Savings</h2>
