@@ -7,11 +7,11 @@ import {Chart} from 'chart.js/auto'
 
 <template>
 
-<div class="flex-grow bg-gray-100 p-8 rounded-lg shadow-lg ">
+<div class="h-full flex-col  flex-grow bg-gradient-to-r from-purple-400 to-cyan-400 hover:from-yellow-400 hover:to-red-400 p-8 rounded-lg shadow-sm ">
   
       
-      <h2 class="text-3xl font-bold mb-6 text-teal-800">Savings</h2>
-      <div class="text-5xl font-bold text-green-500">4000¥</div>
+      <h2 class="text-3xl font-bold mb-6  text-gray-50">Savings</h2>
+      <div class="text-5xl font-bold text-gray-50">4000¥</div>
 
 </div>
 

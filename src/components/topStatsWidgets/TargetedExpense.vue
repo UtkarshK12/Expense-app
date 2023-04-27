@@ -8,15 +8,15 @@ let targetedDetails = targetedDetailStore()
 onMounted(
     async()=>{
     await targetedDetails.fetchDetails()
-    const labels = ["targeted","spent"];
+    const labels = ["target","spent"];
 const data = {
   labels: labels,
   datasets: [{
     label: '',
     data: [targetedDetails.details['participants'], targetedDetails.details['participants']/2],
     backgroundColor: [
-      'rgba(255, 99, 132, 0.2)',
-      'rgba(255, 159, 64, 0.2)',
+    ' ',
+      'teal',
     ],
     borderColor: [
       'rgb(255, 99, 132)',
@@ -31,14 +31,29 @@ const data = {
   type: 'bar',
   data: data,
   options: {
+    
+    maintainAspectRatio: false,
+    responsive: true,
+
     plugins: {
     legend: {
       display: false
     }
   },
+  
     scales: {
+        
       y: {
+        grid:{
+            display: false
+        },
         beginAtZero: true
+      },
+      x: {
+        display: false,
+        grid:{
+            display: false
+        },
       },
     },
     indexAxis: 'y'
@@ -53,9 +68,9 @@ const data = {
 </script>
 <template>
 
-<div class=" bg-gray-100 p-6 h-full flex items-center rounded-lg shadow-lg">
+<div class= "bg-blue-200 hover:bg-green-200 flex justify-evenly rounded-lg shadow-sm ">
     
-        <canvas id="targeted-expense" class="flex "></canvas>
+        <canvas id="targeted-expense" class="p-10"></canvas>
 
 </div>
 
