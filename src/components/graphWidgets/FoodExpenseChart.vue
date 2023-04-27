@@ -15,7 +15,7 @@ onMounted(async()=>{
     const graphData = {
     labels: labels,
     datasets: [{
-    label: 'My First Dataset',
+    label: 'Food Expense',
     data: [foodStore.details['participants'],foodStore.details['participants']+1,foodStore.details['participants']+2,foodStore.details['participants'],foodStore.details['participants']+1,foodStore.details['participants']+2],
     fill: false,
     borderColor: 'rgb(75, 192, 192)',
@@ -44,7 +44,7 @@ onMounted(async()=>{
 
 <template>
 
-<div class="bg-gray-100 p-8 rounded-lg shadow-lg"><canvas id="food-chart"></canvas></div>
+<div class="bg-gray-700 p-8 rounded-lg shadow-lg"><canvas id="food-chart"></canvas></div>
 
 
 </template>

@@ -19,8 +19,8 @@ const data = {
       'teal',
     ],
     borderColor: [
-      'rgb(255, 99, 132)',
-      'rgb(255, 159, 64)'
+      'rgb(255, 70, 100)',
+      'teal'
     ],
     borderWidth: 1,
     
@@ -31,7 +31,9 @@ const data = {
   type: 'bar',
   data: data,
   options: {
-    
+    label:{
+      
+    },
     maintainAspectRatio: false,
     responsive: true,
 
@@ -44,6 +46,14 @@ const data = {
     scales: {
         
       y: {
+        border: {
+      display: false,
+    },
+       
+        ticks:{color:'black',
+        font:{
+          size: 16
+        }},
         grid:{
             display: false
         },
@@ -68,7 +78,7 @@ const data = {
 </script>
 <template>
 
-<div class= "bg-blue-200 hover:bg-green-200 flex justify-evenly rounded-lg shadow-sm ">
+<div class= "flex items-start bg-gradient-to-r from-green-300 to-blue-400 hover:from-green-400 hover:to-yellow-400 hover:bg-green-200 flex justify-evenly rounded-lg shadow-sm ">
     
         <canvas id="targeted-expense" class="p-10"></canvas>
 

@@ -45,7 +45,7 @@ onMounted(async()=>{
 
 <template>
 
-<div class="bg-gray-100 p-8 rounded-lg shadow-lg"><canvas id="total-chart"></canvas></div>
+<div class="bg-gray-700 p-8 rounded-lg shadow-lg"><canvas id="total-chart"></canvas></div>
 
 
 </template>
