@@ -14,13 +14,15 @@ const data = {
   datasets: [{
     label: '',
     data: [targetedDetails.details['participants'], targetedDetails.details['participants']/2],
+    borderRadius: 15,
+    borderSkipped:false,
     backgroundColor: [
-    ' ',
-      'teal',
+    'teal',
+      'rgb(255, 70, 100)',
     ],
     borderColor: [
-      'rgb(255, 70, 100)',
-      'teal'
+      'teal',
+      'rgb(255, 70, 100)'
     ],
     borderWidth: 1,
     
@@ -78,7 +80,7 @@ const data = {
 </script>
 <template>
 
-<div class= "flex items-start bg-gradient-to-r from-green-300 to-blue-400 hover:from-green-400 hover:to-yellow-400 hover:bg-green-200 flex justify-evenly rounded-lg shadow-sm ">
+<div class= "flex items-start bg-gradient-to-r from-green-300 to-blue-400 hover:from-green-400 hover:to-yellow-400 hover:bg-green-200 flex justify-evenly rounded-lg shadow-xl ">
     
         <canvas id="targeted-expense" class="p-10"></canvas>
 

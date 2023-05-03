@@ -12,7 +12,10 @@
     "axios": "^1.3.5",
     "chart.js": "^4.2.1",
     "pinia": "^2.0.34",
-    "vue": "^3.2.47"
+    "v-select": "^0.0.1",
+    "vue": "^3.2.47",
+    "vue-multiselect": "^3.0.0-beta.1",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",

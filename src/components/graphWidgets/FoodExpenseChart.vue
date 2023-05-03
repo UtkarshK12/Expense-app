@@ -44,7 +44,9 @@ onMounted(async()=>{
 
 <template>
 
-<div class="bg-gray-700 p-8 rounded-lg shadow-lg"><canvas id="food-chart"></canvas></div>
+<div class="bg-gray-700 p-8 rounded-lg shadow-lg flex flex-col items-center shadow-xl">
+  <h1 class="p-1 text-gray-400">Food Expenses</h1>
+  <canvas id="food-chart"></canvas></div>
 
 
 </template>
