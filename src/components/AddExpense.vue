@@ -42,38 +42,38 @@ function updateutoamount() {
   <div class="flex flex-col items-center justify-center">
       <form @submit.prevent="onSubmit">
         
-        <div class="p-4 flex items-center gap-3">
+        <div class="p-4 flex items-center gap-3 rounded-md">
            <div>
-            <img src="../assets/person.svg" class="h-12 w-12 bg-gray-200 rounded-md">
+            <font-awesome-icon icon="fa-solid fa-user" style="color: #fde047;" size="2x" />
            </div> 
-            <multiselect class="bg-blue-100 text-gray-900 p-4 rounded-md " v-model="name" :options="nameList"></multiselect>
+            <multiselect class="bg-yellow-200 text-gray-900 p-4 rounded-md " v-model="name" :options="nameList"></multiselect>
         </div>
         <div class="p-4 flex items-center gap-3">
           <div>
-            <img src="../assets/yen_coin.svg" class="h-12 w-12 bg-gray-200 rounded-md">
+            <font-awesome-icon icon="fa-solid fa-yen-sign" style="color: #fde047;" size="2x"/>
            </div> 
-            <input class="bg-blue-100 text-gray-900　rounded-md p-4" v-model="totalamount" type="number">
+            <input class="bg-yellow-200 text-gray-900　rounded-md p-4" v-model="totalamount" type="number">
         </div>
         
         <div class="p-4 flex items-center gap-3">
           <div>
-            <img src="../assets/yen_coin.svg" class="h-12 w-12 bg-pink-300 rounded-md">
+            <font-awesome-icon icon="fa-solid fa-yen-sign" style="color: #d68fbc;" size="2x"/>
            </div> 
-            <input class="bg-blue-100 text-gray-900　rounded-md p-4" @change="updateutoamount" v-model="nachiamount" type="number">
+            <input class="bg-pink-200 text-gray-900　rounded-md p-4" @change="updateutoamount" v-model="nachiamount" type="number">
         </div>
 
         <div class="p-4 flex items-center gap-3">
           <div>
-            <img src="../assets/yen_coin.svg" class="h-12 w-12 bg-blue-300 rounded-md">
+            <font-awesome-icon icon="fa-solid fa-yen-sign" style="color: #6eadd4;" size="2x"/>
            </div> 
-            <input class="bg-blue-100 text-gray-900　rounded-md p-4"  @change="updatenachiamount" v-model="utoamount" type="number">
+            <input class="bg-blue-300 text-gray-900　rounded-md p-4"  @change="updatenachiamount" v-model="utoamount" type="number">
         </div>
 
         <div class="p-4 flex items-center gap-3" >
           <div>
-            <img src="../assets/category.svg" class="h-12 w-12 bg-gray-200 rounded-md">
+           <font-awesome-icon icon="fa-solid fa-folder" style="color: #fde047;" size="2x" />
            </div> 
-            <multiselect class="bg-blue-100 text-gray-900 p-4 rounded-md " v-model="category" :options="categoryList"></multiselect>
+            <multiselect class="bg-yellow-200 text-gray-900 p-4 rounded-md " v-model="category" :options="categoryList"></multiselect>
         </div>
         <div class="flex items-center justify-center py-20 "> 
             <button class="shadow-xl bg-yellow-300 hover:bg-white text-gray-800 hover:text-blue-500 font-bold py-2 px-4 rounded" type="submit">Add Expense!</button>
