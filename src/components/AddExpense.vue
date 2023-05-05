@@ -3,20 +3,33 @@ import {ref} from 'vue'
 import Multiselect from 'vue-multiselect'
 
 let nameList = ref(["Utkarsh","Natsuki"])
-let amount = ref()
+let totalamount = ref(0)
+let nachiamount = ref(0)
+let utoamount = ref(0)
+
 let name=ref()
 
 let category =ref()
 let categoryList = ref(["Food","Maintenance","Grocery","Need","Want"])
 
 const onSubmit = () =>{
-    console.log(String(name.value+" "+amount.value+" "+category.value))
+    console.log(String(name.value+" "+totalamount.value+" "+category.value+" "+utoamount.value+" "+nachiamount.value))
 }
+
+function updatenachiamount() {
+  console.log(nachiamount.value)
+  nachiamount.value= totalamount.value-utoamount.value
+}
+
+function updateutoamount() {
+  utoamount.value= totalamount.value-nachiamount.value
+}
+
 
 </script>
 
 <template>
-<div class="lex md:p-6 flex-col  w-full mx-auto min-h-screen bg-slate-800">
+<div class="lex md:p-6 flex-col  w-full mx-auto min-h-screen bg-gray-700">
  
   <div class="flex p-8 items-center w-full min-w-max">
     <div class="sm:h-10 sm:w-10 lg:h-10 lg:w-10"><img src="../assets/finance-48.svg"></div> 
@@ -39,9 +52,23 @@ const onSubmit = () =>{
           <div>
             <img src="../assets/yen_coin.svg" class="h-12 w-12 bg-gray-200 rounded-md">
            </div> 
-            <input class="bg-blue-100 text-gray-900　rounded-md p-4" v-model="amount" type="number">
+            <input class="bg-blue-100 text-gray-900　rounded-md p-4" v-model="totalamount" type="number">
         </div>
         
+        <div class="p-4 flex items-center gap-3">
+          <div>
+            <img src="../assets/yen_coin.svg" class="h-12 w-12 bg-pink-300 rounded-md">
+           </div> 
+            <input class="bg-blue-100 text-gray-900　rounded-md p-4" @change="updateutoamount" v-model="nachiamount" type="number">
+        </div>
+
+        <div class="p-4 flex items-center gap-3">
+          <div>
+            <img src="../assets/yen_coin.svg" class="h-12 w-12 bg-blue-300 rounded-md">
+           </div> 
+            <input class="bg-blue-100 text-gray-900　rounded-md p-4"  @change="updatenachiamount" v-model="utoamount" type="number">
+        </div>
+
         <div class="p-4 flex items-center gap-3" >
           <div>
             <img src="../assets/category.svg" class="h-12 w-12 bg-gray-200 rounded-md">

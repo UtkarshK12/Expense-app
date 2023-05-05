@@ -13,7 +13,7 @@ import router from '../index'
 </script>
 
 <template>
-<div class="flex md:p-6 flex-col justify-center items-center w-full mx-auto min-h-screen bg-slate-800">
+<div class="flex md:p-6 flex-col justify-center items-center w-full mx-auto min-h-screen bg-gray-700">
   
   <router-link to="/add">
     <button class="md:right-10 md:bottom-10 fixed z-150 py-2 px-4 text-3xl sm:bottom-5 sm:right-5 bottom-10 right-20 mr-4 mb-4 shadow-xl bg-yellow-300 hover:bg-white text-gray-800 hover:text-blue-500 font-bold py-2 px-4 rounded">
